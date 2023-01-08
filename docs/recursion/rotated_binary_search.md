@@ -125,4 +125,4 @@ void main() {
 }
 ```
 
-If you don't know why I used helper function here or why I am passing s and e as arguments check [this](https://github.com/Nitin-Poojary/dsa-with-dart/blob/master/docs/recursion/recursion_arguments_basics.md).
+If you don't know why I used helper function here or why I am passing `s` and `e` as arguments check [this](https://github.com/Nitin-Poojary/dsa-with-dart/blob/master/docs/recursion/recursion_arguments_basics.md).
