@@ -77,14 +77,14 @@ Suppose you have to search an element in this array:
    [5, 6, 13, 14, 22, 24, 25, 1, 2, 3]
 ```
 
-So here since left side of the array is sorted we can check whether element exists in this range if so, search left side otherwise search right side.
+So here we can check if element at index `s` is less than `m` that is if left side is sorted or not which is in this case and since left side of the array is sorted we can check whether element exists in this range if so, search left side otherwise search right side.
 
 ### Case 3:
 ```dart
    [24, 25, 1, 2, 3, 5, 6, 13, 14, 22,]
 ```
 
-In this case right side of the array is sorted, so we will check if element exist in right side of the array if so, search right side otherwise search left side.
+Here, element at index `s` is not less than `m` so, in this case right side of the array is sorted, so we will check if element exist in right side of the array if so, search right side otherwise search left side.
 
 ## Code
 ```dart
