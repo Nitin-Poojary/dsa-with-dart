@@ -1,6 +1,6 @@
 # Printing Triangle patterns with stars (*) using recursion:
 
-Prerequisite for this is here
+Prerequisite for this is [here](https://github.com/Nitin-Poojary/dsa-with-dart/blob/master/docs/recursion/basics/recursion_arguments_basics.md)
 
 So by following same approach first let's print the same using iteration and then convert it into recursive approach.
 
@@ -35,7 +35,7 @@ void main() {
 }
 ```
 ## Observations
-As our previous observation here we can see that we have two variables `row` and `col` which are changing in every iteration with respect to its previous value, so we will pass them as arguments to every function calls.
+As our previous observation [here](https://github.com/Nitin-Poojary/dsa-with-dart/blob/master/docs/recursion/patterns%20and%20algos/rotated_binary_search.md) we can see that we have two variables `row` and `col` which are changing in every iteration with respect to its previous value, so we will pass them as arguments to every function calls.
 
 ## Approach
 
