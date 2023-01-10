@@ -72,7 +72,7 @@ As you can see the `s` and `e` are changing in every iteration while `m` is calc
 
 So the recursive approach will be:
 ```dart
-bool reversiveBinarySearch(List<int> a, int target) {
+bool recursiveBinarySearch(List<int> a, int target) {
   return helperBinary(a, 0, a.length - 1, target);
 }
 
@@ -96,7 +96,7 @@ bool helperBinary(List<int> a, int s, int e, int target) {
 void main() {
   List<int> a = [1, 2, 3, 4, 5, 6, 8, 12];
   int target = 2;
-  print(reversiveBinarySearch(a, target));
+  print(recursiveBinarySearch(a, target));
 }
 ```
 
