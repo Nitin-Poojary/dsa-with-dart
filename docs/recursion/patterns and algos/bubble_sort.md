@@ -8,7 +8,7 @@ In Bubble sort we compare whether the current element in the array is greater th
 
 ## Approach
 
-In the example in prerequisite at first, function is running `5` times then decrement till `1` while printing that many stars(*) along the way. So we are gonna do just that except printing stars this time we will check if next element is greater then current one.
+In the example in prerequisite at first, function is running `5` times then decrement till `1` while printing that many stars(*) along the way. So we are gonna do just that except printing stars this time we will check if current element is greater then next and swap them if so.
 
 ## Code
 
