@@ -1,6 +1,10 @@
 # Bubble sort using recursion
 
-Prerequisite for this is [here](https://github.com/Nitin-Poojary/dsa-with-dart/blob/master/docs/recursion/patterns%20and%20algos/start_pattern.md)
+Prerequisite for this is [here](https://github.com/Nitin-Poojary/dsa-with-dart/blob/master/docs/recursion/patterns%20and%20algos/star_pattern.md)
+
+## Algorithm 
+
+In Bubble sort we compare whether the current element in the array is greater then next element and swap them if so, and continue this check all the way this last element. So in every cycle largest element will be at its correct position.
 
 ## Approach
 
