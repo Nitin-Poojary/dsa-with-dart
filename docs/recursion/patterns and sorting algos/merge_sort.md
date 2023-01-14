@@ -45,7 +45,7 @@ Step 4:
 
 ## Explanation for example
 
-Since a lot is happening in this example so, I will divide this explanation into two parts. First we will go through what exactly is happening and how in the world array is getting sorted in `How array is sorting?` then we will see `How the subarrays are merging?`.
+Since a lot is happening in this example so, I will divide this explanation into two parts. First we will go through what exactly is happening and how in the world array is getting sorted in [`How array is sorting?`](https://github.com/Nitin-Poojary/dsa-with-dart/blob/master/docs/recursion/patterns%20and%20sorting%20algos/merge_sort.md#1-how-array-is-sorting) then we will see [`How the subarrays are merging?`](https://github.com/Nitin-Poojary/dsa-with-dart/blob/master/docs/recursion/patterns%20and%20sorting%20algos/merge_sort.md#2-how-subarrays-are-merging).
 
 ## 1. How array is sorting?
 
