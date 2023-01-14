@@ -102,6 +102,12 @@ void main() {
 
 ```
 
+## Ouput
+```dart
+Before: [5, 4, 21, 7, 13, 2, 8, 1, 3, 9, 17]
+After: [1, 2, 3, 4, 5, 7, 8, 9, 13, 17, 21]
+```
+
 ## Explanation for example
 
 I hope if you are reading this you are confortable with arguments in recursion and know when to use them, as I explained them in prerequisite part. 
@@ -162,6 +168,12 @@ void main() {
   print('After: $a');
 }
 
+```
+
+## Ouput
+```dart
+Before: [5, 4, 21, 7, 13, 2, 8, 1, 3, 9, 17]
+After: [1, 2, 3, 4, 5, 7, 8, 9, 13, 17, 21]
 ```
 
 ## Explanation 
