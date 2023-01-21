@@ -179,3 +179,13 @@ After: [1, 2, 3, 4, 5, 7, 8, 9, 13, 17, 21]
 ## Explanation 
 
 As you can see everything is same here except we are not storing subarrys and we are passing `m` in `merge` function and used that to locate current subarray indexes in original parent array and made changes directly to parent array.
+
+## Time Complexity Analysis
+
+So let's approach this similary to how I explained the working. There are two operations happening here, one is dividing the array and other is merging the array.
+
+So dividing the array takes `log(n)` time since it is dividing the array in half parts.
+
+At every step merging takes place at `n-1` time.
+
+Therefore, we can say algorithm is taking `nlog(n)` time because constants are ignored.
