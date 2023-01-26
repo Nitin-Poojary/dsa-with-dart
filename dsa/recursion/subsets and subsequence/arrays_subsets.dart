@@ -33,7 +33,21 @@ List<List<int>> subsetsOfArray2(List<int> a, int index, List<List<int>> ans) {
   return subsetsOfArray2(a, index + 1, [...ans, ...toAdd]);
 }
 
+void subsetsWithoutRecursion(List<int> a) {
+  List<List<int>> ans = [[]];
+
+  for (int num in a) {
+    int n = ans.length;
+    for (int i = 0; i < n; i++) {
+      List<int> toAdd = [...ans[i]];
+      toAdd.add(num);
+      ans.add(toAdd);
+    }
+  }
+  print(ans);
+}
+
 void main() {
   List<int> sampleArray = [1, 2, 3];
-  print(subsetsOfArray2(sampleArray, 0, [[]]));
+  subsetsWithoutRecursion(sampleArray);
 }
