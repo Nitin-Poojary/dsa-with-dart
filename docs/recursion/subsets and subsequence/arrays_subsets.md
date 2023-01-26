@@ -69,3 +69,32 @@ void main() {
 ```dart
 [[], [1], [2], [1, 2], [3], [1, 3], [2, 3], [1, 2, 3]]
 ```
+
+As you might have guessed the approach we are using doesn't required recursion we can do same with via iterative approach.
+
+## Code 
+```dart
+void subsetsWithoutRecursion(List<int> a) {
+  List<List<int>> ans = [[]];
+
+  for (int num in a) {
+    int n = ans.length;
+    for (int i = 0; i < n; i++) {
+      List<int> toAdd = [...ans[i]];
+      toAdd.add(num);
+      ans.add(toAdd);
+    }
+  }
+  print(ans);
+}
+
+void main() {
+  List<int> sampleArray = [1, 2, 3];
+  subsetsWithoutRecursion(sampleArray);
+}
+```
+
+## Output
+```dart
+[[], [1], [2], [1, 2], [3], [1, 3], [2, 3], [1, 2, 3]]
+```

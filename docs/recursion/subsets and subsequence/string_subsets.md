@@ -62,32 +62,3 @@ void main() {
 ## Explanation
 
 Here, after `up` becomes empty we are adding the `p` to the `plist` that is processed list that we are getting as an argument and returning it and then again adding those returned list together, that is call from when we take it and when we ignore it.
-
-As you might have guessed the approach we are using doesn't required recursion we can do same with via iterative approach.
-
-## Code 
-```dart
-void subsetsWithoutRecursion(List<int> a) {
-  List<List<int>> ans = [[]];
-
-  for (int num in a) {
-    int n = ans.length;
-    for (int i = 0; i < n; i++) {
-      List<int> toAdd = [...ans[i]];
-      toAdd.add(num);
-      ans.add(toAdd);
-    }
-  }
-  print(ans);
-}
-
-void main() {
-  List<int> sampleArray = [1, 2, 3];
-  subsetsWithoutRecursion(sampleArray);
-}
-```
-
-## Output
-```dart
-[[], [1], [2], [1, 2], [3], [1, 3], [2, 3], [1, 2, 3]]
-```
