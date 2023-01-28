@@ -47,7 +47,28 @@ void subsetsWithoutRecursion(List<int> a) {
   print(ans);
 }
 
+void subsetsDuplicates(List<int> a) {
+  List<List<int>> ans = [[]];
+  int start = 0, end = 0;
+
+  for (int i = 0; i < a.length; i++) {
+    int n = ans.length;
+    if (i > 0 && a[i] == a[i - 1]) {
+      start = end + 1;
+    }
+    end = n - 1;
+
+    for (int j = start; j < n; j++) {
+      List<int> toAdd = [...ans[j]];
+      toAdd.add(a[i]);
+      ans.add(toAdd);
+    }
+  }
+
+  print(ans);
+}
+
 void main() {
-  List<int> sampleArray = [1, 2, 3];
-  subsetsWithoutRecursion(sampleArray);
+  List<int> sampleArray = [1, 2, 2];
+  subsetsDuplicates(sampleArray);
 }
