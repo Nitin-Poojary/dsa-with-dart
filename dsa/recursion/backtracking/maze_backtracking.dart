@@ -71,27 +71,27 @@ void mazeBacktrackingPrint(
 }
 
 void main() {
-  // List<List<bool>> mazeBoard = [
-  //   [true, true, true],
-  //   [true, true, true],
-  //   [true, true, true],
-  // ];
-
-  // print(
-  //   mazeBacktracking(
-  //     [],
-  //     '',
-  //     0,
-  //     0,
-  //     mazeBoard,
-  //   ),
-  // );
-
-  List<List<int>> mazeBoard = [
-    [0, 0, 0],
-    [0, 0, 0],
-    [0, 0, 0],
+  List<List<bool>> mazeBoard = [
+    [true, true, true],
+    [true, true, true],
+    [true, true, true],
   ];
 
-  mazeBacktrackingPrint('', 0, 0, mazeBoard, 1);
+  print(
+    mazeBacktracking(
+      [],
+      '',
+      0,
+      0,
+      mazeBoard,
+    ),
+  );
+
+  // List<List<int>> mazeBoard = [
+  //   [0, 0, 0],
+  //   [0, 0, 0],
+  //   [0, 0, 0],
+  // ];
+
+  // mazeBacktrackingPrint('', 0, 0, mazeBoard, 1);
 }

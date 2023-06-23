@@ -108,3 +108,7 @@ void main() {
 ```dart
 [RRDD, RDRD, RDDR, DRRD, DRDR, DDRR]
 ```
+
+## Need for backtracking
+
+As you can see when we are only allowed to move either right or down directions there's nothing to worry about. But what if we can move in all directions like up, right, down, left. Then the real problem arise, if we can move in all directions that means we can also move in direction we came from and that will cause infinite recursion. We wil be solving this issue in [backtracking](https://github.com/Nitin-Poojary/dsa-with-dart/blob/master/docs/recursion/backtracking/maze_backtracking.md) docs.
