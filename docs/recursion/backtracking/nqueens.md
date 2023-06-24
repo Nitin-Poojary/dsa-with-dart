@@ -1,3 +1,20 @@
+# N Queens Problem
+
+## Prerequisite
+
+Prerequisite for this is [here](https://github.com/Nitin-Poojary/dsa-with-dart/blob/master/docs/recursion/backtracking/maze_backtracking.md)
+
+## Problem
+
+Place `n` queens in an nxn board such that no two queens are cancelling each other.
+
+## Approach
+
+Place first queen in first row. Then place second queen in second row such that it should not be able to cancel first queen and vice versa. Then repeat the step for 3rd and 4th queen. If a queen can not be placed in a particular row backtrack and rearrange previous queen. Repeat the steps until all queens are placed.
+
+## Code
+
+```dart
 import 'dart:math';
 
 void nqueensPrint(List<List<bool>> board, int n, int r) {
@@ -67,3 +84,18 @@ void main() {
 
   nqueensPrint(board, n, r);
 }
+```
+
+## Output
+
+```dart
+x Q x x
+x x x Q
+Q x x x
+x x Q x
+
+x x Q x
+Q x x x
+x x x Q
+x Q x x
+```
